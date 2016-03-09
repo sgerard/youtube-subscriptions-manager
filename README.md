@@ -3,6 +3,8 @@
 YSM is a web application that helps you sort your Youtube subscriptions in your
 own categories. This feature was once present on Youtube but has been deprecated.
 
+Check it live on https://dayth.com/services/youtube/
+
 ## Installation
 
 Rename 'config/auth-example.js' as 'config/auth.js' and update its content with
