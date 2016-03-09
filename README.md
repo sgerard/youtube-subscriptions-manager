@@ -8,11 +8,11 @@ Check it live on https://dayth.com/services/youtube/
 ## Installation
 
 Rename 'config/auth-example.js' as 'config/auth.js' and update its content with
-your own values. You need to replace '<your-client-id>', '<your-client-secret>'
-and '<your-server-url>'
+your own values. You need to replace '&lt;your-client-id&gt;', '&lt;<your-client-secret&gt;'
+and '&lt;your-server-url&gt;'
 
 Rename 'views/ga-example.jade' as 'views/ga.jade' and update its content with
-your own values. You need to replace '<your-tracking-id>'
+your own values. You need to replace '&lt;your-tracking-id&gt;'
 
 Install the dependencies needed by the web application with:
 
