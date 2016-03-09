@@ -77,3 +77,5 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+config/auth.js
+views/ga.jade
