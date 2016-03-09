@@ -1,0 +1,31 @@
+<div class="well well-sm subscription" data-id="{{channelId}}">
+    <li class="media">
+        <div class="media-left">
+            <a target="_blank" href="https://www.youtube.com/channel/{{channelId}}/videos">
+                <img class="media-object" src="{{thumbnailUrl}}" alt="{{title}}"/>
+            </a>
+        </div>
+
+        <div class="media-body">
+            <div class="row">
+                <div class="col-md-6">
+                    <h4 class="media-heading">{{title}}</h4>
+                </div>
+                <div class="col-md-6 text-right extras">
+                    <i class="category-count" data-toggle="tooltip"></i>
+                    <a target="_blank" class="btn btn-default btn-xs open-subscription" href="https://www.youtube.com/channel/{{channelId}}/videos">
+                        <i class="fa fa-youtube-play"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="videosInfo row">
+                <div class="col-md-6">
+                    {{totalItemCount}} videos ({{newItemCount}} new)
+                </div>
+                <div class="col-md-6 text-right">
+                    Subscribed {{subscriptionDate}}
+                </div>
+            </div>
+        </div>
+    </li>
+</div>

@@ -1,0 +1,14 @@
+.mastfoot
+    .inner
+        if (user)
+            #userButtons
+                a.create-category.btn.btn-primary.btn-sm(href='#')
+                    i.fa.fa-fw.fa-list-ul 
+                    |  Create category
+                a.settings.btn.btn-primary.btn-sm(href='#')
+                        i.fa.fa-fw.fa-wrench
+                        |  Settings
+                a#signOut.btn.btn-default.btn-sm(href='api/users/logout')
+                    i.fa.fa-fw.fa-sign-out 
+                    |  Sign out
+                

@@ -1,0 +1,282 @@
+.cover-container {
+  padding: 0 50px;
+}
+
+@media (min-width: 992px) {
+  .masthead, .mastfoot, .cover-container {
+    width: 1000px;
+  }
+}
+
+h1, div {
+  font-family: 'Droid Sans', sans-serif;
+  font-weight: 400;
+}
+
+#profile {
+    margin: 10px;
+}
+
+#signin-button {
+  display: inline-block;
+  margin: 30px;
+}
+
+.circular {
+	width: 50px;
+	height: 50px;
+	border-radius: 25px;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+#userButtons a {
+  width: 140px;
+  margin: 0 10px;
+}
+
+.btn-primary i.fa,
+.btn-danger i.fa {
+    color: #fff;
+}
+
+#gConnect .btn {
+    margin: 20px;
+}
+
+.media-list {
+    margin-bottom: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.margin-bottom {
+    margin-bottom: 10px !important;
+}
+
+.loading {
+    margin: 10px;
+}
+
+.ysm-column {
+    width: 515px;
+}
+
+/* SUBSCRIPTIONS LIST */
+.subscription-list,
+.category-list,
+.video-list {
+    outline: 0;
+    height: 500px;
+    overflow-y: hidden;
+    font-size: 14px;
+    /*margin-top: 10px;*/
+}
+
+.subscription {
+  padding: 5px;
+  border-radius: 4px;
+  margin-bottom: 5px;
+  background-color: #424242;
+  border: 1px solid #6F6F6F;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.58);
+  list-style: none;
+  max-width: 500px;
+  color: #fff;
+}
+
+.subscription:last-child {
+    margin-bottom: 0;
+}
+
+.subscription.disabled {
+  background: repeating-linear-gradient(
+    -55deg,
+    #222,
+    #222 10px,
+    #333 10px,
+    #333 20px
+  );
+  opacity: 0.3;
+}
+
+.subscription img {
+  width: 44px;
+  height: 44px;
+}
+
+.subscription h4 {
+  font-size: 16px;
+  text-align: left;
+}
+
+.subscription .videosInfo {
+  text-align: left;
+  font-size: 12px;
+}
+
+.subscription .extras {
+    display: none;
+    font-size: 12px;
+}
+
+.subscription .extras i.category-count {
+    margin-right: 5px;
+}
+
+#sortedSubscriptions,
+.video-list {
+  margin-bottom: 0;
+}
+
+#sortedSubscriptions.ui-state-highlight {
+  border-color: #006EDC;
+}
+
+button.slick-disabled {
+    display: none !important;
+}
+
+.slick-slider {
+    margin-bottom: 0;
+}
+
+/* CATEGORY */
+
+.category {
+  padding: 5px;
+  border-radius: 4px;
+  margin-bottom: 5px;
+  background-color: #424242;
+  border: 1px solid #6F6F6F;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.58);
+  list-style: none;
+  max-width: 500px;
+  color: #fff;
+}
+
+.category:last-child {
+    margin-bottom: 0;
+}
+
+.category .thumbnails {
+    width: 44px;
+    height: 44px;
+}
+
+.category img {
+  width: 50%;
+  height: 50%;
+  float: left;
+}
+
+.category h4 {
+  font-size: 16px;
+  text-align: left;
+}
+
+.category .channelsInfo {
+  text-align: left;
+  font-size: 12px;
+}
+
+.category .extras {
+    display: none;
+}
+
+.category:hover,
+#sortedSubscriptions .subscription:hover {
+    border: 1px solid #ccc;
+    background-color: #333;
+}
+
+/* VIDEO */
+.video-preview {
+    font-size: 12px;
+    text-align: left;
+    float: left;
+    width: 196px;
+    height: 155px;
+    margin: 5px;
+}
+
+.video-preview img {
+    width: 196px;
+    height: 110px;
+}
+
+.video-preview a.video-title {
+    color: #4C84DC;
+    font-weight: bold;
+}
+
+.video-preview .publication-date {
+    color: #51616F;
+}
+
+/* MAIN */
+#userName {
+  font-size: 14px;
+}
+
+img.logo {
+  width: 100px;
+}
+
+div.content {
+  padding: 5px;
+}
+
+/* BOOSTRAP COVER */
+.lead {
+  margin: 0;
+}
+
+.inner {
+  padding: 20px;
+}
+
+.masthead {
+    height: 100px;
+}
+
+/* BOOTSTRAP */
+.modal-header, .modal-footer, .modal-body {
+  padding: 10px;
+}
+
+.modal-header {
+  text-align: center;
+  color: #444;
+}
+
+.modal {
+  text-align: center;
+}
+
+.modal label {
+  color: #777;
+}
+
+@media screen and (min-width: 768px) {
+  .modal:before {
+    display: inline-block;
+    vertical-align: middle;
+    content: " ";
+    height: 100%;
+  }
+}
+
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}

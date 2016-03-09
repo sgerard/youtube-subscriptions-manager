@@ -1,0 +1,17 @@
+- var id = ''
+
+block vars
+
+.modal.fade(tabindex='-1', role='dialog', id=id)
+    .modal-dialog(role='document')
+        .modal-content  
+            .modal-header
+                button.close(type='button', data-dismiss='modal')
+                    span(aria-hidden='true') &times;
+                block modal-header
+                
+            .modal-body
+                block modal-body
+            .modal-footer
+                block modal-footer
+                

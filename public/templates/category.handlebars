@@ -1,0 +1,36 @@
+<div class="well well-sm category" data-id="{{categoryId}}">
+    <li class="media">
+        <div class="media-left">
+            <div class="thumbnails">
+                {{#each thumbnailUrls}}
+                    <img class="media-object" src="{{this}}"/>
+                {{/each}}
+            </div>
+        </div>
+
+        <div class="media-body">
+            <div class="row">
+                <div class="col-md-8">
+                    <h4 class="media-heading">{{name}}</h4>
+                </div>
+                <div class="col-md-4 text-right extras">
+                    <a class="btn btn-default btn-xs edit-category" href="#">
+                        <i class="fa fa-pencil"></i>
+                    </a>
+                    <a class="btn btn-default btn-xs delete-category" href="#">
+                        <i class="fa fa-trash"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="channelsInfo row">
+                <div class="col-md-6">
+                    <span class="channelCount">{{channelCount}}</span> channels
+                    (<span class="videoCount">{{videoCount}}</span> new videos)
+                </div>
+                <div class="col-md-6 text-right">
+
+                </div>
+            </div>
+        </div>
+    </li>
+</div>

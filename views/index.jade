@@ -1,0 +1,69 @@
+extends layout
+
+block stylesheets
+    if (user)
+        link(rel='stylesheet', type='text/css', href='//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css')
+        link(rel='stylesheet', type='text/css', href='//cdn.jsdelivr.net/jquery.slick/1.5.9/slick-theme.css')
+
+    link(rel='stylesheet', href='/css/cover.css')
+    link(rel='stylesheet', href='/css/main.css')
+    link(rel='stylesheet', href='css/ysm.css')
+    
+block content
+    .inner.cover
+        .content-container
+            .content-cell
+                span#corner-tl.corner
+                span#corner-tr.corner
+                span#corner-bl.corner
+                span#corner-br.corner
+                .content-cell
+                    if (!user)
+                        #gConnect
+                            h1.cover-heading= title
+                            p.lead Sort your favorite channels
+                            a.btn.btn-danger(href='api/users/auth')
+                                i.fa.fa-fw.fa-google-plus 
+                                |  Google
+                    
+                    if (user)
+                        #authOps.lead
+                            .row
+                                .col-md-6.ysm-column
+                                    h4 Subscriptions
+                                    #subscriptions.subscription-list 
+                                        ul.media-list
+                                            .loading
+                                                i.fa.fa-spinner.fa-spin.fa-3x.fa-fw.margin-bottom
+                                .col-md-6.ysm-column
+                                    .tabs
+                                        .categories
+                                            h4 Categories
+                                            .category-list
+                                                ul.media-list
+                                                    .loading
+                                                        i.fa.fa-spinner.fa-spin.fa-3x.fa-fw.margin-bottom
+                                        .category-subscriptions(style='display:none;')
+                                            h4#categoryName Select a category
+                                            #sortedSubscriptions.subscription-list.well
+                                                ul.media-list                                                
+                                        .subscription-videos(style='display:none;')
+                                            h4#channelTitle Select a subscription
+                                            .video-list.well
+                                                .video-previews
+                                        
+block modal
+    include categoryModal
+    include settingsModal
+    
+block js
+    if (user)
+        script(src='js/ysm.js')
+        script(type='text/javascript', src='//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js')
+        
+        // templates
+        script(type='text/javascript', src='https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.runtime.min.js')
+        script(src='templates/category.handlebars.js')
+        script(src='templates/subscription.handlebars.js')
+        script(src='templates/trashButton.handlebars.js')
+        script(src='templates/video.handlebars.js')

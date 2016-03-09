@@ -1,0 +1,55 @@
+extends modal
+
+block vars
+    - var id = 'settingsModal'    
+
+block modal-header
+    h4.modal-title Settings
+
+block modal-body
+    form(action='javascript:helper.saveSettings();')
+        .form-group
+            label Visibility
+            .radio
+                label
+                    input(
+                        type='radio', 
+                        name='visibilityOptions', 
+                        id='visibilityOptions-1',
+                        value='show-all', 
+                        checked
+                    ) 
+                    | Show all subscriptions
+            .radio
+                label
+                    input(
+                        type='radio', 
+                        name='visibilityOptions', 
+                        id='visibilityOptions-2',
+                        value='show-uncategorized'
+                    ) 
+                    | Show only uncategorized subscriptions
+            
+            label Sort order of category's subscriptions
+            .radio
+                label
+                    input(
+                        type='radio', 
+                        name='sortOptions', 
+                        id='sortOptions-1',
+                        value='alphabetical', 
+                        checked
+                    ) 
+                    | Alphabetical
+            .radio
+                label
+                    input(
+                        type='radio', 
+                        name='sortOptions', 
+                        id='sortOptions-2',
+                        value='videoCount'
+                    ) 
+                    | New videos count
+block modal-footer
+    a#saveSettings.btn.btn-primary.btn-sm Save
+    

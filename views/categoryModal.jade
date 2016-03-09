@@ -1,0 +1,17 @@
+extends modal
+
+block vars
+    - var id = 'categoryModal'    
+
+block modal-header
+    h4#createCategory.modal-title Create category
+
+block modal-body
+    form(action='javascript:helper.submitCategory();')
+        .form-group
+            label(for='category') Category name
+            input#category.form-control(type='text', placeholder='News')
+            
+block modal-footer
+    a#submitCategory.btn.btn-primary.btn-sm Apply
+    
